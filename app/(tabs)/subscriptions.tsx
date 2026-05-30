@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const onBoarding = () => {
+const subscriptions = () => {
   return (
     <View>
-      <Text>onBoarding</Text>
+      <Text>subscriptions</Text>
     </View>
   );
 };
 
-export default onBoarding;
+export default subscriptions;

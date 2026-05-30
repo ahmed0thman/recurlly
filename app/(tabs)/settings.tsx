@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const onBoarding = () => {
+const settings = () => {
   return (
     <View>
-      <Text>onBoarding</Text>
+      <Text>settings</Text>
     </View>
   );
 };
 
-export default onBoarding;
+export default settings;
