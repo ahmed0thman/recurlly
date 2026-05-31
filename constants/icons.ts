@@ -18,7 +18,7 @@ import spotify from "@/assets/icons/spotify.png";
 import wallet from "@/assets/icons/wallet.png";
 import { ImageSourcePropType } from "react-native";
 
-export const icons: Record<string, ImageSourcePropType> = {
+export const icons = {
   home,
   wallet,
   setting,
@@ -37,6 +37,6 @@ export const icons: Record<string, ImageSourcePropType> = {
   github,
   claude,
   canva,
-} as const;
+} as const satisfies Record<string, ImageSourcePropType>;
 
 export type IconKey = keyof typeof icons;
