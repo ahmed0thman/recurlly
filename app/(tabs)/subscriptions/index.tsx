@@ -1,11 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
+import SafeAreaView from "@/components/SafeAreaView";
 
 const subscriptions = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>subscriptions</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
