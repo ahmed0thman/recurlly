@@ -86,7 +86,7 @@
   }
 
   .home-add-icon {
-    @apply size-12;
+    @apply size-10 border border-gray-200 rounded-full p-2;
   }
 
   .home-balance-card {
@@ -126,15 +126,15 @@
   }
 
   .upcoming-card {
-    @apply mr-4 w-44 rounded-2xl border border-black/10 bg-background p-4;
+    @apply me-4 w-44 rounded-2xl border border-black/10 bg-background p-4;
   }
 
   .upcoming-row {
-    @apply flex-row items-center gap-3;
+    @apply flex-row items-center gap-2;
   }
 
   .upcoming-icon {
-    @apply size-14;
+    @apply size-12;
   }
 
   .upcoming-price {
@@ -150,7 +150,7 @@
   }
 
   .sub-card {
-    @apply rounded-2xl border border-border p-4;
+    @apply rounded-se-2xl rounded-es-2xl border border-border p-4;
   }
 
   .sub-card-expanded {
