@@ -28,7 +28,7 @@ const SubscriptionCard = ({
     plan?.trim() ||
     (renewalDate ? formatSubscriptionDateTime(renewalDate) : "");
 
-  const rowsExpnadedData = [
+  const expandedRows = [
     { label: "Payment Method", value: paymentMethod?.trim() },
     {
       label: "Category",
@@ -46,7 +46,7 @@ const SubscriptionCard = ({
       label: "Status",
       value: status?.trim() ? formatStatusLabel(status) : "",
     },
-  ];
+  ].filter((row) => row.value);
   return (
     <Pressable
       className={clsx("sub-card", "bg-card", expanded && "expanded")}
@@ -75,7 +75,7 @@ const SubscriptionCard = ({
       {expanded && (
         <View className="sub-body">
           <View className="sub-details">
-            {rowsExpnadedData.map((row) => (
+            {expandedRows.map((row) => (
               <View key={row.label} className="sub-row">
                 <View className="sub-row-copy">
                   <Text className="sub-label">{row.label}</Text>

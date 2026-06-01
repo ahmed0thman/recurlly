@@ -16,7 +16,7 @@ export default function App() {
   return (
     <SafeAreaView className="flex-1 p-5 bg-background">
       <FlatList
-        ListHeaderComponent={() => (
+        ListHeaderComponent={
           <>
             <View className="mb-5">
               <HomeHeader />
@@ -25,7 +25,7 @@ export default function App() {
             </View>
             <ListHeading title="All Subscriptions" />
           </>
-        )}
+        }
         ListEmptyComponent={
           <Text className="text-center text-gray-500 mt-4">
             No subscriptions
