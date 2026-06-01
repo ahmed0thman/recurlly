@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
+import SafeAreaView from "@/components/layout/SafeAreaView";
 import React from "react";
-import SafeAreaView from "@/components/SafeAreaView";
+import { Text } from "react-native";
 
 const insights = () => {
   return (
