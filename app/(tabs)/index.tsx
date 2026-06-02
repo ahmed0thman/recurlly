@@ -1,8 +1,6 @@
-import UpComingSubscriptionCard from "@/components/cards/UpComingSubscriptionCard";
 import SafeAreaView from "@/components/layout/SafeAreaView";
-import List from "@/components/list";
 import ListHeading from "@/components/list/ListHeading";
-import { HOME_SUBSCRIPTIONS, UPCOMING_SUBSCRIPTIONS } from "@/constants/data";
+import { HOME_SUBSCRIPTIONS } from "@/constants/data";
 import "@/global.css";
 import { FlatList, Text, View } from "react-native";
 import BalanceCard from "../home/BalanceCard";
