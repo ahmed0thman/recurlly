@@ -1,5 +1,11 @@
 import SafeAreaView from "@/components/layout/SafeAreaView";
-import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, View } from "react-native";
+import {
+  ActivityIndicator,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  View,
+} from "react-native";
 
 interface AuthPageLayoutProps {
   children: React.ReactNode;
@@ -15,6 +21,7 @@ const AuthPageLayout = ({ children }: AuthPageLayoutProps) => {
         <ScrollView
           className="auth-scroll"
           contentContainerClassName="auth-content"
+          keyboardShouldPersistTaps="handled"
         >
           {children}
         </ScrollView>

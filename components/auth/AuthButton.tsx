@@ -7,11 +7,24 @@ interface AuthButtonProps {
   variant?: "primary" | "secondary";
 }
 
-const AuthButton = ({ onPress, label, loading, variant = "primary" }: AuthButtonProps) => {
+const AuthButton = ({
+  onPress,
+  label,
+  loading,
+  variant = "primary",
+}: AuthButtonProps) => {
   if (variant === "secondary") {
     return (
-      <Pressable className="auth-secondary-button" onPress={onPress}>
-        <Text className="auth-secondary-button-text">{label}</Text>
+      <Pressable
+        className={`auth-secondary-button ${loading ? "auth-secondary-button-disabled" : ""}`}
+        onPress={onPress}
+        disabled={loading}
+      >
+        {loading ? (
+          <ActivityIndicator />
+        ) : (
+          <Text className="auth-secondary-button-text">{label}</Text>
+        )}
       </Pressable>
     );
   }
